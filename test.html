@@ -1,0 +1,838 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>type</th>
+      <th>id</th>
+      <th>source</th>
+      <th>instantTicketingRequired</th>
+      <th>nonHomogeneous</th>
+      <th>oneWay</th>
+      <th>lastTicketingDate</th>
+      <th>numberOfBookableSeats</th>
+      <th>itineraries</th>
+      <th>price</th>
+      <th>pricingOptions</th>
+      <th>validatingAirlineCodes</th>
+      <th>travelerPricings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>flight-offer</td>
+      <td>1</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-05</td>
+      <td>3</td>
+      <td>[{'duration': 'PT13H', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T20:30:00'}, 'arrival': {'iataCode': 'ORY', 'terminal': '2', 'at': '2022-12-15T22:00:00'}, 'carrierCode': 'AF', 'number': '6239', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H30M', 'id': '3', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-16T08:10:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-16T09:30:00'}, 'carrierCode': 'AF', 'number': '7688', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '4', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '149.22', 'base': '89.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '149.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '149.22', 'base': '89.00'}, 'fareDetailsBySegment': [{'segmentId': '3', 'cabin': 'ECONOMY', 'fareBasis': 'RS56BALG', 'brandedFare': 'LIGHT', 'class': 'R', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '4', 'cabin': 'ECONOMY', 'fareBasis': 'RS56BALG', 'brandedFare': 'LIGHT', 'class': 'R', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>flight-offer</td>
+      <td>2</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-05</td>
+      <td>3</td>
+      <td>[{'duration': 'PT13H30M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T20:00:00'}, 'arrival': {'iataCode': 'ORY', 'terminal': '2', 'at': '2022-12-15T21:30:00'}, 'carrierCode': 'AF', 'number': '6249', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H30M', 'id': '69', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-16T08:10:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-16T09:30:00'}, 'carrierCode': 'AF', 'number': '7688', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '70', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '149.22', 'base': '89.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '149.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '149.22', 'base': '89.00'}, 'fareDetailsBySegment': [{'segmentId': '69', 'cabin': 'ECONOMY', 'fareBasis': 'RS56BALG', 'brandedFare': 'LIGHT', 'class': 'R', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '70', 'cabin': 'ECONOMY', 'fareBasis': 'RS56BALG', 'brandedFare': 'LIGHT', 'class': 'R', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>flight-offer</td>
+      <td>3</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-05</td>
+      <td>3</td>
+      <td>[{'duration': 'PT18H', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T15:30:00'}, 'arrival': {'iataCode': 'ORY', 'terminal': '2', 'at': '2022-12-15T17:05:00'}, 'carrierCode': 'AF', 'number': '6225', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H35M', 'id': '9', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-16T08:10:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-16T09:30:00'}, 'carrierCode': 'AF', 'number': '7688', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '10', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '150.55', 'base': '89.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '150.55', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '150.55', 'base': '89.00'}, 'fareDetailsBySegment': [{'segmentId': '9', 'cabin': 'ECONOMY', 'fareBasis': 'RS56BALG', 'brandedFare': 'LIGHT', 'class': 'R', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '10', 'cabin': 'ECONOMY', 'fareBasis': 'RS56BALG', 'brandedFare': 'LIGHT', 'class': 'R', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>flight-offer</td>
+      <td>4</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-05</td>
+      <td>3</td>
+      <td>[{'duration': 'PT19H', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T14:30:00'}, 'arrival': {'iataCode': 'ORY', 'terminal': '2', 'at': '2022-12-15T16:00:00'}, 'carrierCode': 'AF', 'number': '6221', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H30M', 'id': '11', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-16T08:10:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-16T09:30:00'}, 'carrierCode': 'AF', 'number': '7688', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '12', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '150.55', 'base': '89.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '150.55', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '150.55', 'base': '89.00'}, 'fareDetailsBySegment': [{'segmentId': '11', 'cabin': 'ECONOMY', 'fareBasis': 'RS56BALG', 'brandedFare': 'LIGHT', 'class': 'R', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '12', 'cabin': 'ECONOMY', 'fareBasis': 'RS56BALG', 'brandedFare': 'LIGHT', 'class': 'R', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>flight-offer</td>
+      <td>5</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-07</td>
+      <td>9</td>
+      <td>[{'duration': 'PT14H', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T19:30:00'}, 'arrival': {'iataCode': 'ORY', 'terminal': '2', 'at': '2022-12-15T21:00:00'}, 'carrierCode': 'AF', 'number': '6237', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H30M', 'id': '5', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-16T08:10:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-16T09:30:00'}, 'carrierCode': 'AF', 'number': '7688', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '6', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '163.22', 'base': '103.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '163.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '163.22', 'base': '103.00'}, 'fareDetailsBySegment': [{'segmentId': '5', 'cabin': 'ECONOMY', 'fareBasis': 'NS55BALG', 'brandedFare': 'LIGHT', 'class': 'N', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '6', 'cabin': 'ECONOMY', 'fareBasis': 'NS55BALG', 'brandedFare': 'LIGHT', 'class': 'N', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>flight-offer</td>
+      <td>6</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-07</td>
+      <td>6</td>
+      <td>[{'duration': 'PT15H', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T18:30:00'}, 'arrival': {'iataCode': 'ORY', 'terminal': '2', 'at': '2022-12-15T20:00:00'}, 'carrierCode': 'AF', 'number': '6235', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H30M', 'id': '7', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-16T08:10:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-16T09:30:00'}, 'carrierCode': 'AF', 'number': '7688', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '8', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '164.55', 'base': '103.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '164.55', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '164.55', 'base': '103.00'}, 'fareDetailsBySegment': [{'segmentId': '7', 'cabin': 'ECONOMY', 'fareBasis': 'NS55BALG', 'brandedFare': 'LIGHT', 'class': 'N', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '8', 'cabin': 'ECONOMY', 'fareBasis': 'NS55BALG', 'brandedFare': 'LIGHT', 'class': 'N', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>flight-offer</td>
+      <td>7</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-07</td>
+      <td>9</td>
+      <td>[{'duration': 'PT23H20M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T10:10:00'}, 'arrival': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T11:45:00'}, 'carrierCode': 'AF', 'number': '7701', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H35M', 'id': '63', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-16T08:10:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-16T09:30:00'}, 'carrierCode': 'AF', 'number': '7688', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '64', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '164.55', 'base': '103.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '164.55', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '164.55', 'base': '103.00'}, 'fareDetailsBySegment': [{'segmentId': '63', 'cabin': 'ECONOMY', 'fareBasis': 'NS55BALG', 'brandedFare': 'LIGHT', 'class': 'N', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '64', 'cabin': 'ECONOMY', 'fareBasis': 'NS55BALG', 'brandedFare': 'LIGHT', 'class': 'N', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>flight-offer</td>
+      <td>8</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-11</td>
+      <td>9</td>
+      <td>[{'duration': 'PT12H45M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T20:45:00'}, 'arrival': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T22:20:00'}, 'carrierCode': 'AF', 'number': '7715', 'aircraft': {'code': '319'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H35M', 'id': '87', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-16T08:10:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-16T09:30:00'}, 'carrierCode': 'AF', 'number': '7688', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '88', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '202.22', 'base': '142.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '202.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '202.22', 'base': '142.00'}, 'fareDetailsBySegment': [{'segmentId': '87', 'cabin': 'ECONOMY', 'fareBasis': 'TS53BALG', 'brandedFare': 'LIGHT', 'class': 'T', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '88', 'cabin': 'ECONOMY', 'fareBasis': 'TS53BALG', 'brandedFare': 'LIGHT', 'class': 'T', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>flight-offer</td>
+      <td>9</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-11</td>
+      <td>5</td>
+      <td>[{'duration': 'PT15H40M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T17:50:00'}, 'arrival': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T19:25:00'}, 'carrierCode': 'AF', 'number': '7709', 'aircraft': {'code': '319'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H35M', 'id': '81', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-16T08:10:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-16T09:30:00'}, 'carrierCode': 'AF', 'number': '7688', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '82', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '203.55', 'base': '142.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '203.55', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '203.55', 'base': '142.00'}, 'fareDetailsBySegment': [{'segmentId': '81', 'cabin': 'ECONOMY', 'fareBasis': 'TS53BALG', 'brandedFare': 'LIGHT', 'class': 'T', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '82', 'cabin': 'ECONOMY', 'fareBasis': 'TS53BALG', 'brandedFare': 'LIGHT', 'class': 'T', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>flight-offer</td>
+      <td>10</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-11</td>
+      <td>9</td>
+      <td>[{'duration': 'PT18H55M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T14:35:00'}, 'arrival': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T16:10:00'}, 'carrierCode': 'AF', 'number': '7713', 'aircraft': {'code': '318'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H35M', 'id': '101', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-16T08:10:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-16T09:30:00'}, 'carrierCode': 'AF', 'number': '7688', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '102', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '203.55', 'base': '142.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '203.55', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '203.55', 'base': '142.00'}, 'fareDetailsBySegment': [{'segmentId': '101', 'cabin': 'ECONOMY', 'fareBasis': 'TS53BALG', 'brandedFare': 'LIGHT', 'class': 'T', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '102', 'cabin': 'ECONOMY', 'fareBasis': 'TS53BALG', 'brandedFare': 'LIGHT', 'class': 'T', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>flight-offer</td>
+      <td>11</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT4H5M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T10:10:00'}, 'arrival': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T11:45:00'}, 'carrierCode': 'AF', 'number': '7701', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H35M', 'id': '15', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T12:50:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T14:15:00'}, 'carrierCode': 'AF', 'number': '7680', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H25M', 'id': '16', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '236.22', 'base': '176.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '236.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '236.22', 'base': '176.00'}, 'fareDetailsBySegment': [{'segmentId': '15', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '16', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>flight-offer</td>
+      <td>12</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT5H', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T17:50:00'}, 'arrival': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T19:25:00'}, 'carrierCode': 'AF', 'number': '7709', 'aircraft': {'code': '319'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H35M', 'id': '1', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T21:30:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T22:50:00'}, 'carrierCode': 'AF', 'number': '7684', 'aircraft': {'code': '319'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '2', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '236.22', 'base': '176.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '236.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '236.22', 'base': '176.00'}, 'fareDetailsBySegment': [{'segmentId': '1', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '2', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>flight-offer</td>
+      <td>13</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT7H45M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T06:30:00'}, 'arrival': {'iataCode': 'ORY', 'terminal': '2', 'at': '2022-12-15T08:00:00'}, 'carrierCode': 'AF', 'number': '6201', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H30M', 'id': '83', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T12:50:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T14:15:00'}, 'carrierCode': 'AF', 'number': '7680', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H25M', 'id': '84', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '236.22', 'base': '176.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '236.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '236.22', 'base': '176.00'}, 'fareDetailsBySegment': [{'segmentId': '83', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '84', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>flight-offer</td>
+      <td>14</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT8H10M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T06:05:00'}, 'arrival': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T07:40:00'}, 'carrierCode': 'AF', 'number': '7711', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H35M', 'id': '25', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T12:50:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T14:15:00'}, 'carrierCode': 'AF', 'number': '7680', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H25M', 'id': '26', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '236.22', 'base': '176.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '236.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '236.22', 'base': '176.00'}, 'fareDetailsBySegment': [{'segmentId': '25', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '26', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>flight-offer</td>
+      <td>15</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT8H15M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T14:35:00'}, 'arrival': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T16:10:00'}, 'carrierCode': 'AF', 'number': '7713', 'aircraft': {'code': '318'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H35M', 'id': '33', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T21:30:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T22:50:00'}, 'carrierCode': 'AF', 'number': '7684', 'aircraft': {'code': '319'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '34', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '236.22', 'base': '176.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '236.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '236.22', 'base': '176.00'}, 'fareDetailsBySegment': [{'segmentId': '33', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '34', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>flight-offer</td>
+      <td>16</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT8H20M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T14:30:00'}, 'arrival': {'iataCode': 'ORY', 'terminal': '2', 'at': '2022-12-15T16:00:00'}, 'carrierCode': 'AF', 'number': '6221', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H30M', 'id': '45', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T21:30:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T22:50:00'}, 'carrierCode': 'AF', 'number': '7684', 'aircraft': {'code': '319'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '46', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '236.22', 'base': '176.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '236.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '236.22', 'base': '176.00'}, 'fareDetailsBySegment': [{'segmentId': '45', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '46', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>flight-offer</td>
+      <td>17</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT9H20M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T13:30:00'}, 'arrival': {'iataCode': 'ORY', 'terminal': '2', 'at': '2022-12-15T15:00:00'}, 'carrierCode': 'AF', 'number': '6219', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H30M', 'id': '47', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T21:30:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T22:50:00'}, 'carrierCode': 'AF', 'number': '7684', 'aircraft': {'code': '319'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '48', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '236.22', 'base': '176.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '236.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '236.22', 'base': '176.00'}, 'fareDetailsBySegment': [{'segmentId': '47', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '48', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>flight-offer</td>
+      <td>18</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT10H20M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T12:30:00'}, 'arrival': {'iataCode': 'ORY', 'terminal': '2', 'at': '2022-12-15T14:00:00'}, 'carrierCode': 'AF', 'number': '6215', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H30M', 'id': '49', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T21:30:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T22:50:00'}, 'carrierCode': 'AF', 'number': '7684', 'aircraft': {'code': '319'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '50', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '236.22', 'base': '176.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '236.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '236.22', 'base': '176.00'}, 'fareDetailsBySegment': [{'segmentId': '49', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '50', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>flight-offer</td>
+      <td>19</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT11H20M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T11:30:00'}, 'arrival': {'iataCode': 'ORY', 'terminal': '2', 'at': '2022-12-15T13:00:00'}, 'carrierCode': 'AF', 'number': '6213', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H30M', 'id': '51', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T21:30:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T22:50:00'}, 'carrierCode': 'AF', 'number': '7684', 'aircraft': {'code': '319'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '52', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '236.22', 'base': '176.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '236.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '236.22', 'base': '176.00'}, 'fareDetailsBySegment': [{'segmentId': '51', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '52', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>flight-offer</td>
+      <td>20</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT12H20M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T10:30:00'}, 'arrival': {'iataCode': 'ORY', 'terminal': '2', 'at': '2022-12-15T12:00:00'}, 'carrierCode': 'AF', 'number': '6209', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H30M', 'id': '53', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T21:30:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T22:50:00'}, 'carrierCode': 'AF', 'number': '7684', 'aircraft': {'code': '319'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '54', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '236.22', 'base': '176.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '236.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '236.22', 'base': '176.00'}, 'fareDetailsBySegment': [{'segmentId': '53', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '54', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>flight-offer</td>
+      <td>21</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT12H40M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T10:10:00'}, 'arrival': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T11:45:00'}, 'carrierCode': 'AF', 'number': '7701', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H35M', 'id': '79', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T21:30:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T22:50:00'}, 'carrierCode': 'AF', 'number': '7684', 'aircraft': {'code': '319'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '80', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '236.22', 'base': '176.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '236.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '236.22', 'base': '176.00'}, 'fareDetailsBySegment': [{'segmentId': '79', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '80', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>flight-offer</td>
+      <td>22</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT13H20M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T09:30:00'}, 'arrival': {'iataCode': 'ORY', 'terminal': '2', 'at': '2022-12-15T11:05:00'}, 'carrierCode': 'AF', 'number': '6207', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H35M', 'id': '55', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T21:30:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T22:50:00'}, 'carrierCode': 'AF', 'number': '7684', 'aircraft': {'code': '319'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '56', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '236.22', 'base': '176.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '236.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '236.22', 'base': '176.00'}, 'fareDetailsBySegment': [{'segmentId': '55', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '56', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>flight-offer</td>
+      <td>23</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT14H20M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T08:30:00'}, 'arrival': {'iataCode': 'ORY', 'terminal': '2', 'at': '2022-12-15T10:05:00'}, 'carrierCode': 'AF', 'number': '6205', 'aircraft': {'code': '319'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H35M', 'id': '57', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T21:30:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T22:50:00'}, 'carrierCode': 'AF', 'number': '7684', 'aircraft': {'code': '319'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '58', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '236.22', 'base': '176.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '236.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '236.22', 'base': '176.00'}, 'fareDetailsBySegment': [{'segmentId': '57', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '58', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>flight-offer</td>
+      <td>24</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT15H20M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T07:30:00'}, 'arrival': {'iataCode': 'ORY', 'terminal': '2', 'at': '2022-12-15T09:00:00'}, 'carrierCode': 'AF', 'number': '6203', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H30M', 'id': '59', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T21:30:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T22:50:00'}, 'carrierCode': 'AF', 'number': '7684', 'aircraft': {'code': '319'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '60', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '237.55', 'base': '176.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '237.55', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '237.55', 'base': '176.00'}, 'fareDetailsBySegment': [{'segmentId': '59', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '60', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>flight-offer</td>
+      <td>25</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT16H20M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T06:30:00'}, 'arrival': {'iataCode': 'ORY', 'terminal': '2', 'at': '2022-12-15T08:00:00'}, 'carrierCode': 'AF', 'number': '6201', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H30M', 'id': '61', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T21:30:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T22:50:00'}, 'carrierCode': 'AF', 'number': '7684', 'aircraft': {'code': '319'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '62', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '237.55', 'base': '176.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '237.55', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '237.55', 'base': '176.00'}, 'fareDetailsBySegment': [{'segmentId': '61', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '62', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>flight-offer</td>
+      <td>26</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT16H45M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T06:05:00'}, 'arrival': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T07:40:00'}, 'carrierCode': 'AF', 'number': '7711', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H35M', 'id': '91', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T21:30:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T22:50:00'}, 'carrierCode': 'AF', 'number': '7684', 'aircraft': {'code': '319'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '92', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '237.55', 'base': '176.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '237.55', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '237.55', 'base': '176.00'}, 'fareDetailsBySegment': [{'segmentId': '91', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '92', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>flight-offer</td>
+      <td>27</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT22H', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T20:45:00'}, 'arrival': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T22:20:00'}, 'carrierCode': 'AF', 'number': '7715', 'aircraft': {'code': '319'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H35M', 'id': '13', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-16T17:25:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-16T18:45:00'}, 'carrierCode': 'AF', 'number': '7686', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '14', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '237.55', 'base': '176.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '237.55', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '237.55', 'base': '176.00'}, 'fareDetailsBySegment': [{'segmentId': '13', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '14', 'cabin': 'ECONOMY', 'fareBasis': 'QS51BALG', 'brandedFare': 'LIGHT', 'class': 'Q', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>flight-offer</td>
+      <td>28</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-20</td>
+      <td>9</td>
+      <td>[{'duration': 'PT4H10M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T14:35:00'}, 'arrival': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T16:10:00'}, 'carrierCode': 'AF', 'number': '7713', 'aircraft': {'code': '318'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H35M', 'id': '23', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T17:25:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T18:45:00'}, 'carrierCode': 'AF', 'number': '7686', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '24', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '278.22', 'base': '218.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '278.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '278.22', 'base': '218.00'}, 'fareDetailsBySegment': [{'segmentId': '23', 'cabin': 'ECONOMY', 'fareBasis': 'LS5YBALG', 'brandedFare': 'LIGHT', 'class': 'L', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '24', 'cabin': 'ECONOMY', 'fareBasis': 'LS5YBALG', 'brandedFare': 'LIGHT', 'class': 'L', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>flight-offer</td>
+      <td>29</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-20</td>
+      <td>9</td>
+      <td>[{'duration': 'PT8H15M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T10:30:00'}, 'arrival': {'iataCode': 'ORY', 'terminal': '2', 'at': '2022-12-15T12:00:00'}, 'carrierCode': 'AF', 'number': '6209', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H30M', 'id': '31', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T17:25:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T18:45:00'}, 'carrierCode': 'AF', 'number': '7686', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '32', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '278.22', 'base': '218.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '278.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '278.22', 'base': '218.00'}, 'fareDetailsBySegment': [{'segmentId': '31', 'cabin': 'ECONOMY', 'fareBasis': 'LS5YBALG', 'brandedFare': 'LIGHT', 'class': 'L', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '32', 'cabin': 'ECONOMY', 'fareBasis': 'LS5YBALG', 'brandedFare': 'LIGHT', 'class': 'L', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>flight-offer</td>
+      <td>30</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-20</td>
+      <td>9</td>
+      <td>[{'duration': 'PT8H35M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T10:10:00'}, 'arrival': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T11:45:00'}, 'carrierCode': 'AF', 'number': '7701', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H35M', 'id': '73', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T17:25:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T18:45:00'}, 'carrierCode': 'AF', 'number': '7686', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '74', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '278.22', 'base': '218.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '278.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '278.22', 'base': '218.00'}, 'fareDetailsBySegment': [{'segmentId': '73', 'cabin': 'ECONOMY', 'fareBasis': 'LS5YBALG', 'brandedFare': 'LIGHT', 'class': 'L', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '74', 'cabin': 'ECONOMY', 'fareBasis': 'LS5YBALG', 'brandedFare': 'LIGHT', 'class': 'L', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>flight-offer</td>
+      <td>31</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-20</td>
+      <td>9</td>
+      <td>[{'duration': 'PT9H15M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T09:30:00'}, 'arrival': {'iataCode': 'ORY', 'terminal': '2', 'at': '2022-12-15T11:05:00'}, 'carrierCode': 'AF', 'number': '6207', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H35M', 'id': '35', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T17:25:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T18:45:00'}, 'carrierCode': 'AF', 'number': '7686', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '36', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '278.22', 'base': '218.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '278.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '278.22', 'base': '218.00'}, 'fareDetailsBySegment': [{'segmentId': '35', 'cabin': 'ECONOMY', 'fareBasis': 'LS5YBALG', 'brandedFare': 'LIGHT', 'class': 'L', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '36', 'cabin': 'ECONOMY', 'fareBasis': 'LS5YBALG', 'brandedFare': 'LIGHT', 'class': 'L', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>flight-offer</td>
+      <td>32</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-20</td>
+      <td>9</td>
+      <td>[{'duration': 'PT10H15M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T08:30:00'}, 'arrival': {'iataCode': 'ORY', 'terminal': '2', 'at': '2022-12-15T10:05:00'}, 'carrierCode': 'AF', 'number': '6205', 'aircraft': {'code': '319'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H35M', 'id': '37', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T17:25:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T18:45:00'}, 'carrierCode': 'AF', 'number': '7686', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '38', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '278.22', 'base': '218.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '278.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '278.22', 'base': '218.00'}, 'fareDetailsBySegment': [{'segmentId': '37', 'cabin': 'ECONOMY', 'fareBasis': 'LS5YBALG', 'brandedFare': 'LIGHT', 'class': 'L', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '38', 'cabin': 'ECONOMY', 'fareBasis': 'LS5YBALG', 'brandedFare': 'LIGHT', 'class': 'L', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>flight-offer</td>
+      <td>33</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-20</td>
+      <td>9</td>
+      <td>[{'duration': 'PT11H15M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T07:30:00'}, 'arrival': {'iataCode': 'ORY', 'terminal': '2', 'at': '2022-12-15T09:00:00'}, 'carrierCode': 'AF', 'number': '6203', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H30M', 'id': '39', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T17:25:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T18:45:00'}, 'carrierCode': 'AF', 'number': '7686', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '40', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '278.22', 'base': '218.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '278.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '278.22', 'base': '218.00'}, 'fareDetailsBySegment': [{'segmentId': '39', 'cabin': 'ECONOMY', 'fareBasis': 'LS5YBALG', 'brandedFare': 'LIGHT', 'class': 'L', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '40', 'cabin': 'ECONOMY', 'fareBasis': 'LS5YBALG', 'brandedFare': 'LIGHT', 'class': 'L', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>flight-offer</td>
+      <td>34</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-20</td>
+      <td>9</td>
+      <td>[{'duration': 'PT12H15M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T06:30:00'}, 'arrival': {'iataCode': 'ORY', 'terminal': '2', 'at': '2022-12-15T08:00:00'}, 'carrierCode': 'AF', 'number': '6201', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H30M', 'id': '41', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T17:25:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T18:45:00'}, 'carrierCode': 'AF', 'number': '7686', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '42', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '278.22', 'base': '218.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '278.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '278.22', 'base': '218.00'}, 'fareDetailsBySegment': [{'segmentId': '41', 'cabin': 'ECONOMY', 'fareBasis': 'LS5YBALG', 'brandedFare': 'LIGHT', 'class': 'L', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '42', 'cabin': 'ECONOMY', 'fareBasis': 'LS5YBALG', 'brandedFare': 'LIGHT', 'class': 'L', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>flight-offer</td>
+      <td>35</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-20</td>
+      <td>9</td>
+      <td>[{'duration': 'PT12H40M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T06:05:00'}, 'arrival': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T07:40:00'}, 'carrierCode': 'AF', 'number': '7711', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H35M', 'id': '77', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T17:25:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T18:45:00'}, 'carrierCode': 'AF', 'number': '7686', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '78', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '278.22', 'base': '218.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '278.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '278.22', 'base': '218.00'}, 'fareDetailsBySegment': [{'segmentId': '77', 'cabin': 'ECONOMY', 'fareBasis': 'LS5YBALG', 'brandedFare': 'LIGHT', 'class': 'L', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '78', 'cabin': 'ECONOMY', 'fareBasis': 'LS5YBALG', 'brandedFare': 'LIGHT', 'class': 'L', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>flight-offer</td>
+      <td>36</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-20</td>
+      <td>1</td>
+      <td>[{'duration': 'PT17H30M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T20:45:00'}, 'arrival': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T22:20:00'}, 'carrierCode': 'AF', 'number': '7715', 'aircraft': {'code': '319'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H35M', 'id': '71', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-16T12:50:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-16T14:15:00'}, 'carrierCode': 'AF', 'number': '7680', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H25M', 'id': '72', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '279.55', 'base': '218.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '279.55', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '279.55', 'base': '218.00'}, 'fareDetailsBySegment': [{'segmentId': '71', 'cabin': 'ECONOMY', 'fareBasis': 'LS5YBALG', 'brandedFare': 'LIGHT', 'class': 'L', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '72', 'cabin': 'ECONOMY', 'fareBasis': 'LS5YBALG', 'brandedFare': 'LIGHT', 'class': 'L', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>flight-offer</td>
+      <td>37</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-20</td>
+      <td>1</td>
+      <td>[{'duration': 'PT17H45M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T20:30:00'}, 'arrival': {'iataCode': 'ORY', 'terminal': '2', 'at': '2022-12-15T22:00:00'}, 'carrierCode': 'AF', 'number': '6239', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H30M', 'id': '95', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-16T12:50:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-16T14:15:00'}, 'carrierCode': 'AF', 'number': '7680', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H25M', 'id': '96', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '279.55', 'base': '218.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '279.55', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '279.55', 'base': '218.00'}, 'fareDetailsBySegment': [{'segmentId': '95', 'cabin': 'ECONOMY', 'fareBasis': 'LS5YBALG', 'brandedFare': 'LIGHT', 'class': 'L', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '96', 'cabin': 'ECONOMY', 'fareBasis': 'LS5YBALG', 'brandedFare': 'LIGHT', 'class': 'L', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>flight-offer</td>
+      <td>38</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-20</td>
+      <td>1</td>
+      <td>[{'duration': 'PT18H15M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T20:00:00'}, 'arrival': {'iataCode': 'ORY', 'terminal': '2', 'at': '2022-12-15T21:30:00'}, 'carrierCode': 'AF', 'number': '6249', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H30M', 'id': '43', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-16T12:50:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-16T14:15:00'}, 'carrierCode': 'AF', 'number': '7680', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H25M', 'id': '44', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '279.55', 'base': '218.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '279.55', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '279.55', 'base': '218.00'}, 'fareDetailsBySegment': [{'segmentId': '43', 'cabin': 'ECONOMY', 'fareBasis': 'LS5YBALG', 'brandedFare': 'LIGHT', 'class': 'L', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '44', 'cabin': 'ECONOMY', 'fareBasis': 'LS5YBALG', 'brandedFare': 'LIGHT', 'class': 'L', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>flight-offer</td>
+      <td>39</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-20</td>
+      <td>1</td>
+      <td>[{'duration': 'PT18H45M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T19:30:00'}, 'arrival': {'iataCode': 'ORY', 'terminal': '2', 'at': '2022-12-15T21:00:00'}, 'carrierCode': 'AF', 'number': '6237', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H30M', 'id': '97', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-16T12:50:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-16T14:15:00'}, 'carrierCode': 'AF', 'number': '7680', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H25M', 'id': '98', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '279.55', 'base': '218.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '279.55', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '279.55', 'base': '218.00'}, 'fareDetailsBySegment': [{'segmentId': '97', 'cabin': 'ECONOMY', 'fareBasis': 'LS5YBALG', 'brandedFare': 'LIGHT', 'class': 'L', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '98', 'cabin': 'ECONOMY', 'fareBasis': 'LS5YBALG', 'brandedFare': 'LIGHT', 'class': 'L', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>flight-offer</td>
+      <td>40</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-11-20</td>
+      <td>1</td>
+      <td>[{'duration': 'PT20H25M', 'segments': [{'departure': {'iataCode': 'NCE', 'terminal': '2', 'at': '2022-12-15T17:50:00'}, 'arrival': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T19:25:00'}, 'carrierCode': 'AF', 'number': '7709', 'aircraft': {'code': '319'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H35M', 'id': '65', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-16T12:50:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-16T14:15:00'}, 'carrierCode': 'AF', 'number': '7680', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H25M', 'id': '66', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '279.55', 'base': '218.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '279.55', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '279.55', 'base': '218.00'}, 'fareDetailsBySegment': [{'segmentId': '65', 'cabin': 'ECONOMY', 'fareBasis': 'LS5YBALG', 'brandedFare': 'LIGHT', 'class': 'L', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '66', 'cabin': 'ECONOMY', 'fareBasis': 'LS5YBALG', 'brandedFare': 'LIGHT', 'class': 'L', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>flight-offer</td>
+      <td>41</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-12-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT4H15M', 'segments': [{'departure': {'iataCode': 'NCE', 'at': '2022-12-15T10:00:00'}, 'arrival': {'iataCode': 'CDG', 'at': '2022-12-15T11:35:00'}, 'carrierCode': 'AF', 'number': '7697', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H35M', 'id': '29', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T12:50:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T14:15:00'}, 'carrierCode': 'AF', 'number': '7680', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H25M', 'id': '30', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '314.22', 'base': '254.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '314.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '314.22', 'base': '254.00'}, 'fareDetailsBySegment': [{'segmentId': '29', 'cabin': 'ECONOMY', 'fareBasis': 'MS50BALG', 'brandedFare': 'LIGHT', 'class': 'M', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '30', 'cabin': 'ECONOMY', 'fareBasis': 'MS50BALG', 'brandedFare': 'LIGHT', 'class': 'M', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>flight-offer</td>
+      <td>42</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-12-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT7H5M', 'segments': [{'departure': {'iataCode': 'NCE', 'at': '2022-12-15T11:40:00'}, 'arrival': {'iataCode': 'CDG', 'at': '2022-12-15T13:15:00'}, 'carrierCode': 'AF', 'number': '7705', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H35M', 'id': '17', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T17:25:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T18:45:00'}, 'carrierCode': 'AF', 'number': '7686', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '18', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '314.22', 'base': '254.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '314.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '314.22', 'base': '254.00'}, 'fareDetailsBySegment': [{'segmentId': '17', 'cabin': 'ECONOMY', 'fareBasis': 'MS50BALG', 'brandedFare': 'LIGHT', 'class': 'M', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '18', 'cabin': 'ECONOMY', 'fareBasis': 'MS50BALG', 'brandedFare': 'LIGHT', 'class': 'M', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>flight-offer</td>
+      <td>43</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-12-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT7H30M', 'segments': [{'departure': {'iataCode': 'NCE', 'at': '2022-12-15T11:15:00'}, 'arrival': {'iataCode': 'ORY', 'at': '2022-12-15T12:45:00'}, 'carrierCode': 'AF', 'number': '6211', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H30M', 'id': '67', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T17:25:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T18:45:00'}, 'carrierCode': 'AF', 'number': '7686', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '68', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '314.22', 'base': '254.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '314.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '314.22', 'base': '254.00'}, 'fareDetailsBySegment': [{'segmentId': '67', 'cabin': 'ECONOMY', 'fareBasis': 'MS50BALG', 'brandedFare': 'LIGHT', 'class': 'M', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '68', 'cabin': 'ECONOMY', 'fareBasis': 'MS50BALG', 'brandedFare': 'LIGHT', 'class': 'M', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>flight-offer</td>
+      <td>44</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-12-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT8H5M', 'segments': [{'departure': {'iataCode': 'NCE', 'at': '2022-12-15T14:45:00'}, 'arrival': {'iataCode': 'ORY', 'at': '2022-12-15T16:15:00'}, 'carrierCode': 'AF', 'number': '6223', 'aircraft': {'code': '318'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H30M', 'id': '19', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T21:30:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T22:50:00'}, 'carrierCode': 'AF', 'number': '7684', 'aircraft': {'code': '319'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '20', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '314.22', 'base': '254.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '314.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '314.22', 'base': '254.00'}, 'fareDetailsBySegment': [{'segmentId': '19', 'cabin': 'ECONOMY', 'fareBasis': 'MS50BALG', 'brandedFare': 'LIGHT', 'class': 'M', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '20', 'cabin': 'ECONOMY', 'fareBasis': 'MS50BALG', 'brandedFare': 'LIGHT', 'class': 'M', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>flight-offer</td>
+      <td>45</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-12-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT8H45M', 'segments': [{'departure': {'iataCode': 'NCE', 'at': '2022-12-15T10:00:00'}, 'arrival': {'iataCode': 'CDG', 'at': '2022-12-15T11:35:00'}, 'carrierCode': 'AF', 'number': '7697', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H35M', 'id': '85', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T17:25:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T18:45:00'}, 'carrierCode': 'AF', 'number': '7686', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '86', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '314.22', 'base': '254.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '314.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '314.22', 'base': '254.00'}, 'fareDetailsBySegment': [{'segmentId': '85', 'cabin': 'ECONOMY', 'fareBasis': 'MS50BALG', 'brandedFare': 'LIGHT', 'class': 'M', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '86', 'cabin': 'ECONOMY', 'fareBasis': 'MS50BALG', 'brandedFare': 'LIGHT', 'class': 'M', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>flight-offer</td>
+      <td>46</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-12-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT10H5M', 'segments': [{'departure': {'iataCode': 'NCE', 'at': '2022-12-15T12:45:00'}, 'arrival': {'iataCode': 'ORY', 'at': '2022-12-15T14:15:00'}, 'carrierCode': 'AF', 'number': '6217', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H30M', 'id': '21', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T21:30:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T22:50:00'}, 'carrierCode': 'AF', 'number': '7684', 'aircraft': {'code': '319'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '22', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '314.22', 'base': '254.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '314.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '314.22', 'base': '254.00'}, 'fareDetailsBySegment': [{'segmentId': '21', 'cabin': 'ECONOMY', 'fareBasis': 'MS50BALG', 'brandedFare': 'LIGHT', 'class': 'M', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '22', 'cabin': 'ECONOMY', 'fareBasis': 'MS50BALG', 'brandedFare': 'LIGHT', 'class': 'M', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>flight-offer</td>
+      <td>47</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-12-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT11H10M', 'segments': [{'departure': {'iataCode': 'NCE', 'at': '2022-12-15T11:40:00'}, 'arrival': {'iataCode': 'CDG', 'at': '2022-12-15T13:15:00'}, 'carrierCode': 'AF', 'number': '7705', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H35M', 'id': '27', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T21:30:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T22:50:00'}, 'carrierCode': 'AF', 'number': '7684', 'aircraft': {'code': '319'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '28', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '314.22', 'base': '254.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '314.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '314.22', 'base': '254.00'}, 'fareDetailsBySegment': [{'segmentId': '27', 'cabin': 'ECONOMY', 'fareBasis': 'MS50BALG', 'brandedFare': 'LIGHT', 'class': 'M', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '28', 'cabin': 'ECONOMY', 'fareBasis': 'MS50BALG', 'brandedFare': 'LIGHT', 'class': 'M', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>flight-offer</td>
+      <td>48</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-12-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT11H35M', 'segments': [{'departure': {'iataCode': 'NCE', 'at': '2022-12-15T11:15:00'}, 'arrival': {'iataCode': 'ORY', 'at': '2022-12-15T12:45:00'}, 'carrierCode': 'AF', 'number': '6211', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H30M', 'id': '75', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T21:30:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T22:50:00'}, 'carrierCode': 'AF', 'number': '7684', 'aircraft': {'code': '319'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '76', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '314.22', 'base': '254.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '314.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '314.22', 'base': '254.00'}, 'fareDetailsBySegment': [{'segmentId': '75', 'cabin': 'ECONOMY', 'fareBasis': 'MS50BALG', 'brandedFare': 'LIGHT', 'class': 'M', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '76', 'cabin': 'ECONOMY', 'fareBasis': 'MS50BALG', 'brandedFare': 'LIGHT', 'class': 'M', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>flight-offer</td>
+      <td>49</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-12-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT12H50M', 'segments': [{'departure': {'iataCode': 'NCE', 'at': '2022-12-15T10:00:00'}, 'arrival': {'iataCode': 'CDG', 'at': '2022-12-15T11:35:00'}, 'carrierCode': 'AF', 'number': '7697', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H35M', 'id': '99', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-15T21:30:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-15T22:50:00'}, 'carrierCode': 'AF', 'number': '7684', 'aircraft': {'code': '319'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '100', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '314.22', 'base': '254.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '314.22', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '314.22', 'base': '254.00'}, 'fareDetailsBySegment': [{'segmentId': '99', 'cabin': 'ECONOMY', 'fareBasis': 'MS50BALG', 'brandedFare': 'LIGHT', 'class': 'M', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '100', 'cabin': 'ECONOMY', 'fareBasis': 'MS50BALG', 'brandedFare': 'LIGHT', 'class': 'M', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>flight-offer</td>
+      <td>50</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-12-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT15H45M', 'segments': [{'departure': {'iataCode': 'NCE', 'at': '2022-12-15T17:45:00'}, 'arrival': {'iataCode': 'ORY', 'at': '2022-12-15T19:15:00'}, 'carrierCode': 'AF', 'number': '6233', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H30M', 'id': '89', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-16T08:10:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-16T09:30:00'}, 'carrierCode': 'AF', 'number': '7688', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '90', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '315.55', 'base': '254.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '315.55', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '315.55', 'base': '254.00'}, 'fareDetailsBySegment': [{'segmentId': '89', 'cabin': 'ECONOMY', 'fareBasis': 'MS50BALG', 'brandedFare': 'LIGHT', 'class': 'M', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '90', 'cabin': 'ECONOMY', 'fareBasis': 'MS50BALG', 'brandedFare': 'LIGHT', 'class': 'M', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>flight-offer</td>
+      <td>51</td>
+      <td>GDS</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2022-12-15</td>
+      <td>9</td>
+      <td>[{'duration': 'PT16H45M', 'segments': [{'departure': {'iataCode': 'NCE', 'at': '2022-12-15T16:45:00'}, 'arrival': {'iataCode': 'ORY', 'at': '2022-12-15T18:15:00'}, 'carrierCode': 'AF', 'number': '6229', 'aircraft': {'code': '318'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H30M', 'id': '93', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CDG', 'terminal': '2F', 'at': '2022-12-16T08:10:00'}, 'arrival': {'iataCode': 'MPL', 'at': '2022-12-16T09:30:00'}, 'carrierCode': 'AF', 'number': '7688', 'aircraft': {'code': '321'}, 'operating': {'carrierCode': 'AF'}, 'duration': 'PT1H20M', 'id': '94', 'numberOfStops': 0, 'blacklistedInEU': False}]}]</td>
+      <td>{'currency': 'EUR', 'total': '315.55', 'base': '254.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '315.55', 'additionalServices': [{'amount': '25.00', 'type': 'CHECKED_BAGS'}]}</td>
+      <td>{'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}</td>
+      <td>[AF]</td>
+      <td>[{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '315.55', 'base': '254.00'}, 'fareDetailsBySegment': [{'segmentId': '93', 'cabin': 'ECONOMY', 'fareBasis': 'MS50BALG', 'brandedFare': 'LIGHT', 'class': 'M', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '94', 'cabin': 'ECONOMY', 'fareBasis': 'MS50BALG', 'brandedFare': 'LIGHT', 'class': 'M', 'includedCheckedBags': {'quantity': 0}}]}]</td>
+    </tr>
+  </tbody>
+</table>

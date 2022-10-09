@@ -19,7 +19,7 @@ def get_flight_offers_search(o_place,d_place,depart_date,adults):
 
 o_place = "NCE"
 d_place = "MPL"
-depart_date = "2022-10-15"
+depart_date = "2022-12-15"
 adults = "1"
 
 res = get_flight_offers_search(o_place,d_place,depart_date,adults)
